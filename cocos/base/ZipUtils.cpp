@@ -43,9 +43,10 @@
 #include <map>
 
 // FIXME: Other platforms should use upstream minizip like mingw-w64  
-// minizip 1.2.0 same with system
+#ifdef MINIZIP_FROM_SYSTEM
 #define unzGoToFirstFile64(A,B,C,D) unzGoToFirstFile2(A,B,C,D, NULL, 0, NULL, 0)
 #define unzGoToNextFile64(A,B,C,D) unzGoToNextFile2(A,B,C,D, NULL, 0, NULL, 0)
+#endif
 
 NS_CC_BEGIN
 
