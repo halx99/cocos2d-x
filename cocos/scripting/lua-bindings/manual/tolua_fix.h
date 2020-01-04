@@ -35,7 +35,7 @@
 #define lua_objlen(L,i)		lua_rawlen(L, (i))
 #endif
 #endif
-    
+
 #define TOLUA_REFID_PTR_MAPPING "toluafix_refid_ptr_mapping"
 #define TOLUA_REFID_TYPE_MAPPING "toluafix_refid_type_mapping"
 #define TOLUA_REFID_FUNCTION_MAPPING "toluafix_refid_function_mapping"

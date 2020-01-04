@@ -726,7 +726,7 @@ unsigned char* FileUtils::getFileDataFromZip(const std::string& zipFilePath, con
         CC_BREAK_IF(!file);
 
         // minizip 1.2.0 is same with other platforms
-        int ret = unzLocateFile(file, filename.c_str(), NULL);
+        int ret = unzLocateFile(file, filename.c_str(), nullptr);
 
         CC_BREAK_IF(UNZ_OK != ret);
 
